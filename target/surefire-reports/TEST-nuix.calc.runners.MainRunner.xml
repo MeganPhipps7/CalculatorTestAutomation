@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nuix.calc.runners.MainRunner" time="9.169" tests="3" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/meganphipps/Calculator App Test"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="env" value="production"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/meganphipps/Calculator App Test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/y8/nsm9lgwd1s75z7xwfy5gtgw00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.1/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/meganphipps/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.1/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.1/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/meganphipps"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="meganphipps"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify -Denv=production"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.1/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="Adding multiple positive integers" classname="Calculator" time="4.086">
+    <failure message="&#10;Result verification failed.&#10;Expected result: 2241.300733&#10;Actual result: 5458.3863&#10; expected:&lt;[2241.30073]3&gt; but was:&lt;[5458.386]3&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 2241.300733
+Actual result: 5458.3863
+ expected:<[2241.30073]3> but was:<[5458.386]3>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "2241.300733"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:11)
+]]></failure>
+    <system-out><![CDATA[
+@combinationEquations
+Scenario: Adding multiple positive integers                                                        &amp#27;[90m# src/test/resources/nuix/calc/features/CombinationEquations.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user is on the Calculator app&amp#27;[0m                                                          &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_is_on_the_Calculator_app()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user performs the following operation &amp#27;[0m&amp#27;[32m&amp#27;[1m"800 / 2 × 6 + 2 -14 + 0 × 0.32 - 20 / 4.09 × 30"&amp#27;[0m &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_performs_the_following_operation(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe user verifies the result is &amp#27;[0m&amp#27;[31m&amp#27;[1m"2241.300733"&amp#27;[0m                                               &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 2241.300733
+Actual result: 5458.3863
+ expected:<[2241.30073]3> but was:<[5458.386]3>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "2241.300733"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:11)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 51660
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 30, 2021 11:40:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 30, 2021 11:40:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 95
+]]></system-err>
+  </testcase>
+  <testcase name="Adding 2 nine digit integers" classname="Calculator" time="3.023">
+    <failure message="&#10;Result verification failed.&#10;Expected result: 348915857&#10;Actual result: 2.38710532&#10; expected:&lt;[348915857]&gt; but was:&lt;[2.38710532]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 348915857
+Actual result: 2.38710532
+ expected:<[348915857]> but was:<[2.38710532]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "348915857"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:21)
+]]></failure>
+    <system-out><![CDATA[
+@combinationEquations
+Scenario: Adding 2 nine digit integers                                                                           &amp#27;[90m# src/test/resources/nuix/calc/features/CombinationEquations.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user is on the Calculator app&amp#27;[0m                                                                        &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_is_on_the_Calculator_app()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user performs the following operation &amp#27;[0m&amp#27;[32m&amp#27;[1m"749274091 × 19263.4062 / -999998888 + -400358232 - 2.38710532"&amp#27;[0m &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_performs_the_following_operation(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe user verifies the result is &amp#27;[0m&amp#27;[31m&amp#27;[1m"348915857"&amp#27;[0m                                                               &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 348915857
+Actual result: 2.38710532
+ expected:<[348915857]> but was:<[2.38710532]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "348915857"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:21)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 54388
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 30, 2021 11:40:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 30, 2021 11:40:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 95
+]]></system-err>
+  </testcase>
+  <testcase name="Adding two positive integers then adding a third" classname="Calculator" time="2.06">
+    <failure message="&#10;Result verification failed.&#10;Expected result: 106.2&#10;Actual result: 93.8&#10; expected:&lt;[106.2]&gt; but was:&lt;[93.8]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 106.2
+Actual result: 93.8
+ expected:<[106.2]> but was:<[93.8]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "106.2"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:36)
+]]></failure>
+    <system-out><![CDATA[
+@combinationEquations
+Scenario: Adding two positive integers then adding a third &amp#27;[90m# src/test/resources/nuix/calc/features/CombinationEquations.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user is on the Calculator app&amp#27;[0m                  &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_is_on_the_Calculator_app()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user performs the following operation &amp#27;[0m&amp#27;[32m&amp#27;[1m"12 × 81"&amp#27;[0m &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_performs_the_following_operation(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe user verifies the result is &amp#27;[0m&amp#27;[32m&amp#27;[1m"972"&amp#27;[0m               &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user performs the following operation &amp#27;[0m&amp#27;[32m&amp#27;[1m"/ 6"&amp#27;[0m      &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_performs_the_following_operation(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe user verifies the result is &amp#27;[0m&amp#27;[32m&amp#27;[1m"162"&amp#27;[0m               &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user performs the following operation &amp#27;[0m&amp#27;[32m&amp#27;[1m"- 62"&amp#27;[0m     &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_performs_the_following_operation(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe user verifies the result is &amp#27;[0m&amp#27;[32m&amp#27;[1m"100"&amp#27;[0m               &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user performs the following operation &amp#27;[0m&amp#27;[32m&amp#27;[1m"- -6.2"&amp#27;[0m   &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_performs_the_following_operation(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe user verifies the result is &amp#27;[0m&amp#27;[31m&amp#27;[1m"106.2"&amp#27;[0m             &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 106.2
+Actual result: 93.8
+ expected:<[106.2]> but was:<[93.8]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "106.2"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:36)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user performs the following operation &amp#27;[0m&amp#27;[36m&amp#27;[1m"+ 6.2"&amp#27;[0m    &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_performs_the_following_operation(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user verifies the result is &amp#27;[0m&amp#27;[36m&amp#27;[1m"112.4"&amp#27;[0m             &amp#27;[90m# nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 60035
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 30, 2021 11:41:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 30, 2021 11:41:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 95
+]]></system-err>
+  </testcase>
+</testsuite>

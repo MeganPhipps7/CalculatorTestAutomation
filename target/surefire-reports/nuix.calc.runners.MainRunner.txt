@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: nuix.calc.runners.MainRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 9.256 sec <<< FAILURE! - in nuix.calc.runners.MainRunner
+Adding multiple positive integers(Calculator)  Time elapsed: 4.086 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 2241.300733
+Actual result: 5458.3863
+ expected:<[2241.30073]3> but was:<[5458.386]3>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "2241.300733"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:11)
+
+Adding 2 nine digit integers(Calculator)  Time elapsed: 3.023 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 348915857
+Actual result: 2.38710532
+ expected:<[348915857]> but was:<[2.38710532]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "348915857"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:21)
+
+Adding two positive integers then adding a third(Calculator)  Time elapsed: 2.06 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+Result verification failed.
+Expected result: 106.2
+Actual result: 93.8
+ expected:<[106.2]> but was:<[93.8]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at nuix.calc.pages.CalculatorPage.verifyResult(CalculatorPage.java:242)
+	at nuix.calc.stepDefinitions.Calculator_StepDefinition.the_user_verifies_the_result_is(Calculator_StepDefinition.java:39)
+	at ✽.The user verifies the result is "106.2"(file:///Users/meganphipps/Calculator%20App%20Test/src/test/resources/nuix/calc/features/CombinationEquations.feature:36)
+
