@@ -1,5 +1,5 @@
-@Division
-Feature: Calculator
+@regression @division
+Feature: Divsion
 
   #positive, negative and decimal calculations
 

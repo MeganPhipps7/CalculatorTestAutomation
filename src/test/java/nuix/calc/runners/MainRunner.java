@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "html:target/default-cucumber-reports", "json:target/cucumber.json"},
         features = "src/test/resources/nuix/calc/features",
         glue = "nuix/calc/stepDefinitions",
-        tags = {"@Regression"},
+        tags = {"@regression"},
         dryRun = false,
         strict = true
 )

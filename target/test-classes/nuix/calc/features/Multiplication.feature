@@ -1,5 +1,5 @@
-@multiply
-Feature: Calculator
+@multiplication @regression
+Feature: Multiplication
 
   # 2 number: positive, negative and decimal calculations
 

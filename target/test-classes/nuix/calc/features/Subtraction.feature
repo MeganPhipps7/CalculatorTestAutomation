@@ -1,5 +1,5 @@
-@Subtraction
-Feature: Calculator
+@regression @subtraction
+Feature: Subtraction
 
   # 2 number input calculations: positive, negative and decimal
 

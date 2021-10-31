@@ -1,5 +1,5 @@
-@Addition
-Feature: Calculator
+@addition @regression
+Feature: Addition
 
   # 2 number: positive, negative and decimal calculations
 

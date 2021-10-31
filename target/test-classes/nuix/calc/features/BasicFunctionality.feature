@@ -1,8 +1,8 @@
-@BasicFunctionality
-  @Calculator
-Feature:
+@basicFunctionality @regression
+Feature: Basic functionality
 
-    # fails in staging because clicking 5 makes 6 appear
+    # fails in staging due to clicking 5 makes 6 appear
+  @smoke
   Scenario: Verifying numbers work
     Given The user is on the Calculator app
     Then The user verifies all numbers work on the calculator

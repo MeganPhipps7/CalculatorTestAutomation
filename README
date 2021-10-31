@@ -1,0 +1,3 @@
+To run this framework using cli, use the following command.
+    - To run tests on staging env: mvn verify -Denv="staging"
+    - To run tests on production env: mvn verify -Denv="production"
